@@ -1,0 +1,250 @@
+
+*{
+   font-family: Arial, Helvetica, sans-serif; 
+}
+
+#container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "article article"
+        "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    justify-content: center;
+}
+
+.home{
+    font-size: 120px;
+    float: left;
+
+}    
+
+
+header {
+    grid-area: header;
+    background-color: rgba(49, 50, 45, 0.09);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 93vw;
+    z-index: 1000;
+    margin: 40px;
+    align-content: center;
+    border-radius: 20px;
+    display: flex; 
+    align-items: center;    
+    justify-content: space-between; 
+}
+
+main {
+    grid-area: article;
+    background-color:rgb(44, 22, 64);
+    border-radius: 20px;
+}
+
+footer {
+    grid-area: footer;
+    padding-top: 100px; 
+    text-align: center;
+    list-style: none; 
+
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none; 
+    padding: 0; 
+    margin:0; 
+    margin-right: 45px;
+    align-items: center; 
+    float:none
+}
+
+nav a {
+    text-decoration: none;
+}
+
+main section {
+    width: 95vw;      /* Ocupa toda a largura da janela */
+    height: 100vh;     /* Ocupa toda a altura da janela */
+    box-sizing: border-box;
+    display: flex;     /* Opcional: para centralizar conteúdo */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+section {
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px; /* Espaçamento externo */
+    background-color: #f0f0f0; /* Cor de fundo para destaque */
+    border-radius: 8px; /* Bordas arredondadas */
+
+}
+
+
+.logo {
+    width: 100px; 
+    height: auto; 
+    padding: 10px;
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os campos do formulário */
+
+}
+
+form input {
+    width: 100%;       /* faz os inputs ocuparem toda a largura do form */
+    padding: 10px;     /* aumenta o espaço interno dos inputs */
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.message {
+    width: 100%;       /* faz o input de mensagem ocupar toda a largura do form */
+    padding: 65px;     /* aumenta o espaço interno do input */
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#hello {
+color:rgb(44, 22, 64); ;
+font-size: 170px;
+float: left
+}
+
+picture {
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(44, 22, 64) ;
+    border-radius: 20px;
+    padding: 16px;
+    width: 400px;    
+    height: 300px;   
+    margin: 20px;
+    box-sizing: border-box;
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden; 
+}
+
+picture img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+img{
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;      /* Um ao lado do outro */
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    justify-content: center;  /* Centraliza o conjunto na section */
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    background-color: #e6d6f5; /* Corzinha suave */
+    padding: 32px 24px;
+    border-radius: 16px;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+
+.logo {
+    width: 30px; 
+    height: auto; 
+    padding: 10px;
+    margin: 10px;
+}
+
+.white-margem{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.course {
+    display: block;
+    padding: 20px;
+    margin: 20px;
+    background-color:rgb(149, 131, 166); 
+    border-radius: 8px; 
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    min-height: 150px;
+    box-sizing: border-box;
+}
+
+#education {
+    display: flex;
+    flex-direction: row;
+    align-items: center;     
+    gap: 40px; 
+}
+
+.education-logo{
+
+   float: center;
+   background-color: #f0f0f0;
+
+}
+
+.about-images {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;     
+    gap: 40px; 
+}
+
+.project-image {
+justify-content: center;
+align-items: stretch;
+}
+
+button {
+    background-color: rgb(164, 122, 203);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.github {
+    color: white;
+    text-decoration: none;
+}

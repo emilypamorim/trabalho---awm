@@ -1,34 +1,121 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Emily Amorim</title>
 </head>
 <body>
+ <div id="container">
+    <!--Header com o menu com os links --> 
     <header>
-        <a href="/"><img src="" alt="logo do site"></a>
+        <a  href=""><img class="logo" src="img/rosadosventos.png" alt="logo do site"></a>
             <nav>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#education">Formação</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
     </header>
 
     <main>
-        <section>
-            <picture>
-                <img src="img/foto de perfil.jpg" alt="foto minha" width="300" height="300">
-            </picture>
+        <!--section home --> 
+        <section id="home">
+            <h1 id="hello">Hello, world!</h1>
         </section>
+         <!-- section sobre mim -->   
+        <section id="about">
+            <div class="about">
 
-        <section>
-            <h1>Sobre mim</h1>
-            <p>Meu nome é Emily Amorim, tenho 19 anos e sou estudante de Engenharia de Softare na uninter. 
-            <p>Além disso, gosto de ler livros de literatura, especialmente a brasileira, como "Uma aprendizagem ou livro dos prazeres" da Clarice Lispector"</p>
+                <div class = "about-images">
+                    <picture>
+                        <img src="img/foto de perfil.jpg" alt="foto minha">
+                    </picture>  
+                </div>
+                <div class="about-text">
+                <h1>Sobre mim</h1>
+                <p>Meu nome é Emily Amorim, tenho 19 anos e sou estudante de Engenharia de Software na uninter. fascinada por aprender vi na tecnologia uma possibilidade para viver um estilo de vida lifelong learnig. para além da área acadêmica, eu gosto muito de praticar esportes, como tênis de mesa e atlestimo. Adoro ler, especialmente literatura brasileira. Já me arrisquei na escrita e publiquei 6 poemas. Tenho um cachorro chamdo murhp inspirado na filha cooper de interestellar, que é um dos meus filmes favoritos."</p>
+                </div>
+            </div>
         </section>
+        <!-- section sobre a formação educacional --> 
+        <section id="education"> 
+
+            <div class="course">
+                <h1>Ensino médio técnico | informática</h1>
+                <img class="education-logo" src="img/logoifsp-removebg-preview.png" alt="logo do IFSP" width="100" height="100">
+                <h2>Concluído</h2>
+                <p>2021 - 2024</p>
+                <p>HTML|CSS|Java Script|POO|Java|C|PHP|Kanban|Banco de Dados</p>
+            </div>
+
+            <div class="course">
+                <h1>Tecnologia em Sistemas para Internet</h1>
+                <img class="education-logo" src="img/logoifsp-removebg-preview.png" alt="logo do IFSP" width="100" height="100">
+                <H2>Cursando</H2>
+                <p>2025 - 2027</p>
+                <p>Git | GitHub| Spring | MySQL| desenvolvimento web </p>
+            </div>
+
+              <div class="course">
+                <h1>Engenharia de Software</h1>
+                <img class="education-logo" src="img/uninter-logo.png" alt="logo da UNINTER" width="100" height="100">
+                <h2>Cursando</h2>
+                <P>2025 - 2028</P>
+                <p>| Arquitetura de Software | Padrões de Projeto (Design Patterns) | Ferramentas de Modelagem (UML) | Scrum e Kanban |  </p>
+
+
+        </section>
+           
+        <!-- section de projetos --> 
+        <section id="projects">
+            <h1>Projetos</h1>
+            <div class = "projetos">
+                <div class="project-image">
+                    <picture>
+                        <img src="img/taskwave.png" alt="código fonte de um site">
+                    </picture>
+                    <h3>TaskWave</h3>
+                    <p>Projeto de um site de lista de tarefas que está sendo desenvolvido com Java</p>
+                    <button class ="github"><a href="https://github.com/emilypamorim/TaskWave">Ver projeto</a></button>
+                </div>
+
+                
+                <div class="project-image">
+                    <picture>
+                        <img src="img/darcy.png" alt="imagem de um site">
+                    </picture>
+                    <h3>Site de um antropólgo brasileiro</h3>
+                    <p>Projeto de um site estático desenvolvido com HTML e CSS</p>
+                    <button class ="github"><a href="https://github.com/emilypamorim/Freecodecamp-Tributo-CientistaBrasileiro">Ver projeto</a>
+                </div>
+
+                <div class="project-image">
+                    <picture>
+                        <img src="img/formulario.png" alt="imagem de formulário">
+                    </picture>
+                    <h3>Formulário</h3>
+                    <p>Projeto de um formulário desenvolvido com HTML e CSS</p>
+                    <button class="github"><a href="https://emilypamorim.github.io/formulario/">Ver projeto</a></button>
+                </div>
+            </div>
+
+        </section>
+        <!--section para contato --> 
+        <section id="contact">
+            <h1>Contato</h1>
+            <p>Você pode entrar em contato comigo através do email: <a href="mailto:">
+            <form action="mailto:amorimemily129@gmail.com" method="post" enctype="text/plain">
+                <!--  inputs: nome, email e mensagem-->
+                <input class="name" type="text" name="name" placeholder="Nome" required>
+                <input class="email" type="email" name="email" placeholder="Email" required>
+                <input class="message" type="text" name="message" placeholder="Entre em contato" required>
+                <input type="submit" value="Enviar">   
+            </section>
 
     </main>
 
@@ -37,11 +124,11 @@
             <p>Desenvolvido por: Emily Amorim</p>
             <p>Email:amorimemily129@gmail.com</p>
             <p>Telefone: (19) 9891-23593</p>
-            <p> Gitbub:<a href=""></a></p>
+            <p> Gitbub:<a href="https://github.com/emilypamorim">emilypamorim</a></p>
         </addres>
         
     </footer>
-
+</div>
     
 </body>
 </html>
